@@ -48,7 +48,8 @@ def main():
     parser.add_argument("-k", "--key", type=str, help="API key", required=True)
     parser.add_argument("-l", "--list", action="store_true", help="prints full list of data", default=False)
     parser.add_argument("-c", "--city", type=str, help="prints the list of data for specified city")
-    parser.add_argument("--history", action="store_true", help="prints last 7 rows of data)", default=False)
+    parser.add_argument("--history", action="store_true", help="prints last 7 rows of data (use it with -c/--city)",
+                        default=False)
     args = parser.parse_args()
     if args.key:
         key = args.key
